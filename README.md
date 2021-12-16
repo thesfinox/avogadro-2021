@@ -50,6 +50,8 @@ source ./avogadro2021/bin/activate
 pip install tensorflow numpy seaborn notebook
 ```
 
+## Visualisation in Google Colab
+
 If you use [Google Colab](https://colab.research.google.com/github/thesfinox/avogadro-2021/blob/main/demo_cv.ipynb), make sure to add and run a cell containing
 
 ```bash
@@ -59,9 +61,11 @@ If you use [Google Colab](https://colab.research.google.com/github/thesfinox/avo
 ```
 
 at the beginning of the notebook.
+Remember also to activate a GPU environment to speed up the training process: go to *Edit > Notebook Settings*, and select the *GPU* environment from the *Hardware Accelerator* dropdown.
 
-## Visualisation and Shared Notebooks
+## Other Visualisation Tools and Shared Notebooks
 
 You can also simply visualise the notebook using [NBviewer](https://nbviewer.org/github/thesfinox/avogadro-2021/blob/main/demo_cv.ipynb) by clicking on the badge at the beginning of this file.
 Otherwise, the notebook can also be run interactively using [Binder](https://mybinder.org/v2/gh/thesfinox/avogadro-2021/HEAD?labpath=demo_cv.ipynb) through the corresponding badge.
 Notice that, in this case, quite some time may be dedicated to the automatic installation of the packages.
+The execution will be on CPU: the training of the algorithms may take longer than GPU: you can set the labels `TRAIN_CNN` and `TRAIN_AE` to `False` to automatically use the pretrained weights.
