@@ -15,6 +15,7 @@
 This repository contains complementary material and code for the course "Applying Machine Learning to String Theory".
 In this small demo, we introduce some technical instruments to deploy a simple AI for the recognition of handwritten digits.
 The main idea is to showcase the use of convolutional neural networks and autoencoders in a simple realisation, and to show possible generalisations and applications.
+The [notes](./notes.pdf) used in the lecture are also available. 
 
 ## Installation using Conda
 
